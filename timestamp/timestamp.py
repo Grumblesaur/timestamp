@@ -43,7 +43,7 @@ def parse_kwargs(d):
     
   return settings
 
-def stamp(**kwargs):
+def stamp(kwargs):
   settings = parse_kwargs(kwargs)
   
   out = None
