@@ -11,8 +11,8 @@ def normalize_timezone(tz):
       sign = 1 if tz[0] == '+' else '-'
       hours, minutes = tz[1:].split(':')
       offset = sign
-      offset += hours * seconds_per_hour
-      offset += minutes * seconds_per_minute
+      offset += float(hours) * seconds_per_hour
+      offset += float(minutes) * seconds_per_minute
     else:
       try:
         offset = float(tz) * 3600
