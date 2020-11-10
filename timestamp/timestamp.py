@@ -8,7 +8,7 @@ def normalize_timezone(tz):
   offset = 0
   if isinstance(tz, (str,)):
     if re.match("[+-]\d+:[012345][0123456789]", tz):
-      sign = 1 if tz[0] == '+' else '-'
+      sign = 1 if tz[0] == '+' else -1
       hours, minutes = tz[1:].split(':')
       offset = sign
       offset += float(hours) * seconds_per_hour
