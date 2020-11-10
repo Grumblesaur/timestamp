@@ -30,7 +30,7 @@ def parse_kwargs(d):
   class TimeSettings(object):
     def __init__(self):
       self.timezone = 0
-      self.format = "%y-%m-%d %H:%M:%S"
+      self.format = "%Y-%m-%d %H:%M:%S"
       self.as_epoch = False
       self.nanos = False
     
